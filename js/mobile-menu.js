@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const menuBtnRef = document.querySelector("[data-menu-button]");
-  const navListRef = document.querySelector(".r-p-navigation-list");
-  const headerRef = document.querySelector(".r-p-header");
-  const navigationRef = document.querySelector(".r-p-navigation");
+  const navListRef = document.querySelector(".r-a-navigation-list");
+  const headerRef = document.querySelector(".r-a-header");
+  const navigationRef = document.querySelector(".r-a-navigation");
 
   menuBtnRef.addEventListener("click", () => {
     menuBtnRef.classList.toggle("is-open");
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     navigationRef.classList.toggle("is-open");
   });
 
-  document.querySelectorAll(".r-p-navigation-link").forEach((n) =>
+  document.querySelectorAll(".r-a-navigation-link").forEach((n) =>
     n.addEventListener("click", () => {
       navListRef.classList.remove("is-open");
       menuBtnRef.classList.remove("is-open");
@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   );
 });
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const popup = document.getElementById("cookie-popup");
